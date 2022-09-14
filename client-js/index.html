@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<style>
+		#data{
+			background-color: black;
+			color: white;padding:2%;
+		}
+		.box{
+			border:1px solid blue; 
+			padding:2%;margin:1%;width: 25%;
+			float:left; background-color: #ddd;
+		}
+	</style>
+<script type="text/javascript" src='jquery.min.js'></script>
+<script>
+	function data_request_timer(){
+		window.setInterval(get_data, 5000); //timer for running get_data() function every 5 seconds 
+	}
+
+	function get_data(){
+		console.log("fetching data from server");
+
+		var url="https://helloworld.co.in/demo/rest-api/data.php";
+		//var url ="http://192.168.1.3/demo/rest-api/data.php";
+
+		$.get(url,
+		function(data, status){
+	    	document.getElementById("data").innerHTML = data;
+
+	    	var str=document.getElementById("data").innerHTML;
+          	console.log("str: " + str);
+          	
+          	const obj = JSON.parse(str);
+            
+            var tempr = obj['1']['temp'];
+            var humid = obj['1']['hum'];
+            var press = obj['1']['pres'];
+
+            document.getElementById("temperature").innerHTML = tempr;
+            document.getElementById("humidity").innerHTML = humid;
+            document.getElementById("pressure").innerHTML = press;
+	  	});
+	}
+</script>
+</head>
+
+<body onload="data_request_timer()">
+
+<h3 align='center'>Rest-API: Javascript Client Demo</h3>
+
+<hr>
+
+<div>
+    JSON data received:- <p id='data'></p>
+</div>
+
+<hr>
+
+<p>Information Extracted:-</p>
+<div class='box'>
+    Temperature: <b id='temperature'></b>
+</div>
+
+<div class='box'>
+    Humidity: <b id='humidity'></b>
+</div>
+
+<div class='box'>
+    Pressure: <b id='pressure'></b>
+</div>
+
+</body>
+</html>
