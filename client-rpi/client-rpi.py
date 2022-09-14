@@ -4,7 +4,7 @@ url="https://helloworld.co.in/demo/rest-api/data.php"
 #url="http://192.168.1.3/demo/rest-api/data.php"
 
 ''' curl is used to make a http request '''
-cmd="curl -s " + url
+cmd="curl -s -k " + url
 print (cmd)
 print("\n")
 
