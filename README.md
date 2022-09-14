@@ -39,7 +39,7 @@ Monitor the activity on Serial Monitor tool. You should see the following output
 
 ## Access Rest-API with PHP
 
-Folder 'client-php' contains the PHP code. You can place this code in your local webserver and access it via browser. 
+Folder 'client-php' contains the PHP code. You can place this code in your local webserver or any other webserver on internet from where the API is accessible. The code fetches JSON data from Rest-API, decodes it and displays the desired information.
 
 <p align="center">
 <img src='https://github.com/jiteshsaini/files/blob/main/img/PHP-rest-api.jpg'>
@@ -49,7 +49,7 @@ You can also access this file from this link https://helloworld.co.in/demo/clien
 
 ## Access Rest-API with Javascript
 
-Folder 'client-js' contains a HTML file with Javascript code embedded in it.  
+Folder 'client-js' contains a HTML file with Javascript code embedded in it. The JS code makes ajax calls to the Rest-API to fetch JSON data and extracts the desired information by parsing it.
 
 <p align="center">
 <img src='https://github.com/jiteshsaini/files/blob/main/img/javascript-rest-api.jpg'>
