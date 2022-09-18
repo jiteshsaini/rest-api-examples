@@ -1,5 +1,14 @@
 # Using Rest APIs with Raspberry Pi, ESP32 and Web Applcations (PHP & Javascript)
 
+<p align="left">
+Read the complete article here :- <a href='https://helloworld.co.in/article/rest-api-examples'>
+    <img src='https://github.com/jiteshsaini/files/blob/main/img/logo3.gif' height='30px'>
+</a> 
+Watch Video :- <a href='https://youtu.be/K60ACu4j2Kw'>
+   on Youtube <img src='https://github.com/jiteshsaini/files/blob/main/img/btn_youtube_2.png' height='30px'>
+</a> 
+</p>
+
 The repo contains sample codes to demonstrate how to make use of Rest-APIs with different client devices running code in different languages. 
 The sample codes include snippets in Python (for Raspberry Pi), C (for ESP32), PHP and Javascript. 
 Each snippet makes HTTP request to a sample Rest-API (created for this project) and  processes the JSON response returned by the Rest-API.
