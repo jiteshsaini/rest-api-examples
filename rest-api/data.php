@@ -11,7 +11,7 @@ $arr['2']['cc'] = random_int(501, 600); //a random value
 $json=json_encode($arr); //convert the array in json format 
 echo"$json"; //send the json response
 
-/* Save the response and client data to a file on disk*/
+/* Save the response and client data to a file locally on server*/
 $t=time();
 $date_time= date('H:i:s', $t);
 
